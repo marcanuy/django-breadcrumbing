@@ -48,3 +48,13 @@ DYNAMIC_BREADCRUMBS_PATH_MAX_COMPONENT_LENGTH
 Default: ``50``
 
 Each path component's maximum length.
+
+
+DYNAMIC_BREADCRUMBS_CAPITALIZE_BREADCRUMS
+---------------------------------------------
+
+Default: ``False``
+
+Automatically capitalize the first letter of each breadcrumb title.
+When set to `True`, the first letter of each breadcrumb title will be capitalized.
+

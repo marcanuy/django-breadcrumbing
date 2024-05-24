@@ -135,6 +135,10 @@ class BreadcrumbsItem:
                 return apps.get_app_config(self.name_raw).verbose_name
             except Exception:
                 pass
+
+        if app_settings.CAPITALIZE_BREADCRUMS:
+            self.name_raw = self.name_raw.capitalize()
+
         return self.name_raw
 
     def as_dict(self):
